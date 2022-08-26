@@ -1,0 +1,29 @@
+- published: July 24, 2022
+  title: How do we get a FOSS UPI mobile app
+  speakers:
+    - name: Nemo
+      avatar: https://github.com/captn3m0.png
+      url: https://github.com/captn3m0
+  slides: https://docs.google.com/presentation/d/1cRZjDAMK_ihQ4RK3Rd3lwjdsFqN3-vM1OOJ2N7_FTaM/
+  url: https://docs.google.com/presentation/d/1cRZjDAMK_ihQ4RK3Rd3lwjdsFqN3-vM1OOJ2N7_FTaM/
+
+- published: July 23, 2022
+  title: 'IndiaFOSS: My learnings from building Blaze as a FOSS project'
+  speakers:
+    - name: Akash Hamirwasia
+      avatar: https://github.com/blenderskool.png
+      url: https://github.com/blenderskool
+  slides: https://docs.google.com/presentation/d/1cRZjDAMK_ihQ4RK3Rd3lwjdsFqN3-vM1OOJ2N7_FTaM/
+  url: https://docs.google.com/presentation/d/1cRZjDAMK_ihQ4RK3Rd3lwjdsFqN3-vM1OOJ2N7_FTaM/
+
+- published: Oct 14, 2021
+  title: Kubecon - How we built a Cloud native Dev stack at scale
+  speakers:
+    - name: Srinidhi
+      avatar: https://github.com/srinidhis05.png
+      url: https://github.com/srinidhis05
+    - name: Venkat V
+      avatar: https://github.com/venkatvghub.png
+      url: https://github.com/venkatvghub
+  slides: ''
+  url: https://kccncna2021.sched.com/event/lV20
