@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .guide-y {
+    width: 1px;
+    background: linear-gradient(
+      180deg,
+      #cbd5e1aa,
+      #cbd5e1aa 50%,
+      transparent 0,
+      transparent
+    );
+    background-size: 1px 8px;
+  }
+
+  .guide-x {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      #cbd5e1aa,
+      #cbd5e1aa 50%,
+      transparent 0,
+      transparent
+    );
+    background-size: 8px 1px;
+  }
+
+  .bg-dotted {
+    background-image: linear-gradient(
+        #0f172a 0%,
+        transparent 25%,
+        transparent 75%,
+        #0f172a 100%
+      ),
+      radial-gradient(#1e293b 0.9500000000000001px, transparent 0);
+    background-size: cover, 24px 24px;
+  }
+
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animate-delay-600 {
+    animation-delay: 600ms;
+  }
+
+  .animate-delay-900 {
+    animation-delay: 900ms;
+  }
+
+  .animate-counter-spin {
+    animation: counter-spin 1s linear infinite;
+  }
+
+  .pause {
+    animation-play-state: paused;
+  }
+
+  .hero-ring {
+    @apply circle absolute border border-dashed border-slate-300/60 animate-spin hover:pause pointer-events-none;
+    animation-duration: 100s;
+  }
+}
+
+@keyframes counter-spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: 550;
+  }
+}
+
+.draw {
+  animation: draw 8000ms linear infinite;
+}
+
+.circle {
+  grid-template-areas: 'layer';
+  @apply rounded-full place-items-center grid;
+
+  --radius: 25vmin;
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+}
+
+.circle > * {
+  grid-area: layer;
+  @apply place-items-center grid;
+
+  /* Decimal value, 0-1 based on the child's index. */
+  --d: calc(var(--i) / var(--total));
+  /* Offset to get better starting placement on the circle */
+  --r-offset: -0.25turn;
+  /* Full circle */
+  --r-amount: 1turn;
+  /* Rotation based on the decimal and r modifiers */
+  --r: calc((var(--r-amount) * var(--d)) + var(--r-offset));
+  /* Rotate, transform out, then negative rotation so the content appears upright */
+  --transform: rotate(var(--r)) translate(var(--radius))
+    rotate(calc(-1 * var(--r)));
+
+  transform: var(--transform);
+  /* transition-delay: calc(0.1s * var(--i)); */
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+header nav a {
+  @apply hover:text-blue-600 hover:bg-slate-300/20 px-3 py-1 rounded-full transition;
+}
+
+footer a {
+  @apply transition-colors hover:text-blue-600;
+}
+
+.mask {
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 2%,
+    black,
+    transparent 48%
+  );
+}
