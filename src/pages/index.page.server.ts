@@ -1,0 +1,36 @@
+import axios from 'axios';
+import { Member } from '../components/Hero';
+import { Project } from '../components/Projects/Card';
+import { Talk } from '../components/Talks/Card';
+
+export interface PageData {
+  members: Member[];
+  projects: Project[];
+  talks: Talk[];
+}
+
+/**
+ * Make API calls here and pass the received data to the page
+ */
+export async function onBeforeRender() {
+  const [{ data: projects }, { data: members }, { default: talks }] =
+    await Promise.all([
+      axios.get('https://api.github.com/orgs/razorpay/repos'),
+      axios.get('https://api.github.com/orgs/razorpay/members'),
+      import('../talks.yaml'),
+    ]);
+
+  // Attach categories to projects
+  // Check if we can use GitHub repository topics for this?
+  projects[0].categories = ['Dev', 'Design'];
+
+  return {
+    pageContext: {
+      pageProps: {
+        projects,
+        members,
+        talks,
+      } as PageData,
+    },
+  };
+}
