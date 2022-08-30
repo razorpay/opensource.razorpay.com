@@ -19,7 +19,7 @@ const Talks = ({ talks }: { talks: Talk[] }) => (
       </div>
       <div className="mt-20 grid grid-cols-3 gap-8 container mx-auto px-4">
         {talks.map((talk) => (
-          <TalkCard key={talk.url} {...talk} />
+          <TalkCard key={talk.title} {...talk} />
         ))}
       </div>
     </div>
