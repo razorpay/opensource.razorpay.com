@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         sans: ['Mulish', ...defaultTheme.fontFamily.sans],
       },
+      fontSize: {
+        xxs: '0.625rem',
+      },
       space: {
         42: '10.94rem',
       },
