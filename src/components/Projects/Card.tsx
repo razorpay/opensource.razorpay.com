@@ -2,13 +2,14 @@ import { HiOutlineStar, HiOutlineExternalLink } from 'react-icons/hi/index';
 import { TbGitFork } from 'react-icons/tb/index';
 
 export interface Project {
-  id: string;
+  id: number;
   html_url: string;
   name: string;
   stargazers_count: number;
   forks: number;
   description: string | null;
   language: string | null;
+  categories?: string[];
 }
 
 const languages: Record<string, string> = {
