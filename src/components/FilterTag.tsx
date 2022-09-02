@@ -1,7 +1,4 @@
-type PropsOfHtmlElement<T extends HTMLElement> = React.DetailedHTMLProps<
-  React.HtmlHTMLAttributes<T>,
-  T
->;
+import { PropsOfHtmlElement } from '../utils/types';
 
 interface FilterTagProps extends PropsOfHtmlElement<HTMLDivElement> {
   count?: number;
