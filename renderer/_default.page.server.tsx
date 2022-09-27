@@ -47,6 +47,8 @@ async function render(pageContext: PageContextBuiltIn & PageContext) {
         <meta property="twitter:description" content=${desc}>
         <meta property="twitter:image" content="https://opensource.razorpay.com/site-preview.png">
 
+        <link rel="icon" type="image/png" href="https://opensource.razorpay.com/favicon.png">
+
         <link
           href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
