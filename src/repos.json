@@ -1,0 +1,463 @@
+{
+    "data": [
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/go-financial",
+            "name": "go-financial",
+            "stargazers_count": 269,
+            "forks": 17,
+            "categories": ["Finance"],
+            "description": "A go port of numpy-financial functions and more.",
+            "language": "Go"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/ifsc",
+            "name": "ifsc",
+            "categories": ["Finance"],
+            "stargazers_count": 266,
+            "forks": 108,
+            "description": ":bank: IFSC Codes Repository",
+            "language": "Go"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/blade",
+            "name": "blade",
+            "categories": ["Design"],
+            "stargazers_count": 205,
+            "forks": 42,
+            "description": "Design System that powers Razorpay",
+            "language": "TypeScript"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-php",
+            "name": "razorpay-php",
+            "categories": ["SDKs"],
+            "stargazers_count": 148,
+            "forks": 103,
+            "description": "Razorpay PHP Library ",
+            "language": "PHP"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-python",
+            "name": "razorpay-python",
+            "categories": ["SDKs"],
+            "stargazers_count": 128,
+            "forks": 66,
+            "description": "Razorpay Python SDK",
+            "language": "Python"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-node",
+            "name": "razorpay-node",
+            "categories": ["SDKs"],
+            "stargazers_count": 127,
+            "forks": 83,
+            "description": "Razorpay node.js bindings",
+            "language": "JavaScript"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/devstack",
+            "name": "devstack",
+            "categories": ["Featured"],
+            "stargazers_count": 107,
+            "forks": 8,
+            "description": "Razorpay DevX cloud on laptop solution",
+            "language": "Go"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/react-native-razorpay",
+            "name": "react-native-razorpay",
+            "categories": ["Mobile"],
+            "stargazers_count": 99,
+            "forks": 101,
+            "description": "React Native wrapper for Razorpay's mobile SDKs",
+            "language": "Java"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-flutter",
+            "name": "razorpay-flutter",
+            "categories": ["Mobile"],
+            "stargazers_count": 88,
+            "forks": 83,
+            "description": "Razorpay Flutter Plugin",
+            "language": "Java"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-android-sample-app",
+            "name": "razorpay-android-sample-app",
+            "categories": ["Mobile", "Sample"],
+            "stargazers_count": 83,
+            "forks": 86,
+            "description": "Sample app demonstrating integration of Razorpay checkout",
+            "language": "Java"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/ifsc-api",
+            "name": "ifsc-api",
+            "categories": ["Finance"],
+            "stargazers_count": 69,
+            "forks": 35,
+            "description": ":bank: Standalone API for IFSC codes",
+            "language": "CSS"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/concierge",
+            "name": "concierge",
+            "categories": ["Security"],
+            "stargazers_count": 67,
+            "forks": 5,
+            "description": "Web Management & Secure Access Control of AWS Security Groups. Allows you to create IP leases for incoming connections to AWS instances. Also, allows creating invites to allow guest access by URL\/Email Invites.Uses two factor authentication for additional security. ",
+            "language": "Go"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-ruby",
+            "name": "razorpay-ruby",
+            "categories": ["SDKs"],
+            "stargazers_count": 63,
+            "forks": 56,
+            "description": "Razorpay Ruby SDK",
+            "language": "Ruby"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-cordova",
+            "name": "razorpay-cordova",
+            "categories": ["Mobile"],
+            "stargazers_count": 52,
+            "forks": 29,
+            "description": "Cordova wrapper around Razorpay's Android and iOS SDKs",
+            "language": "Shell"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/metro",
+            "name": "metro",
+            "categories": ["Featured"],
+            "stargazers_count": 41,
+            "forks": 11,
+            "description": "The Service Bus!",
+            "language": "Go"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-woocommerce",
+            "name": "razorpay-woocommerce",
+            "categories": ["Integrations"],
+            "stargazers_count": 38,
+            "forks": 28,
+            "description": "Razorpay Payment Extension for Woocommerce",
+            "language": "PHP"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-java",
+            "name": "razorpay-java",
+            "categories": ["SDKs"],
+            "stargazers_count": 34,
+            "forks": 53,
+            "description": "Razorpay Java SDK",
+            "language": "Java"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/alohomora",
+            "name": "alohomora",
+            "categories": ["Security"],
+            "stargazers_count": 31,
+            "forks": 2,
+            "description": "alohomora is razorpay's secret distribution system",
+            "language": "Python"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/public-presentations",
+            "name": "public-presentations",
+            "categories": ["Featured"],
+            "stargazers_count": 29,
+            "forks": 3,
+            "description": "A curated list of public talks and articles by Razorpay",
+            "language": null
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-magento",
+            "name": "razorpay-magento",
+            "categories": ["Integrations"],
+            "stargazers_count": 26,
+            "forks": 35,
+            "description": "Razorpay Payment Extension for Magento",
+            "language": "PHP"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-php-testapp",
+            "name": "razorpay-php-testapp",
+            "categories": ["Sample"],
+            "stargazers_count": 24,
+            "forks": 39,
+            "description": "Sample App for Razorpay PHP Integration",
+            "language": "PHP"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-go",
+            "name": "razorpay-go",
+            "categories": ["SDKs"],
+            "stargazers_count": 24,
+            "forks": 18,
+            "description": "Razorpay Go SDK",
+            "language": "Go"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-pod",
+            "name": "razorpay-pod",
+            "categories": ["Mobile"],
+            "stargazers_count": 22,
+            "forks": 11,
+            "description": ":iphone: CocoaPod implementation of Razorpay's Payment SDK. Refer for instructions:",
+            "language": "Objective-C"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-opencart",
+            "name": "razorpay-opencart",
+            "categories": ["Integrations"],
+            "stargazers_count": 16,
+            "forks": 18,
+            "description": "Razorpay Payment Extension for Opencart",
+            "language": "PHP"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-python-testapp",
+            "name": "razorpay-python-testapp",
+            "categories": ["Sample"],
+            "stargazers_count": 16,
+            "forks": 25,
+            "description": "Razorpay test app for python",
+            "language": "HTML"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-whmcs",
+            "name": "razorpay-whmcs",
+            "categories": ["Integrations"],
+            "stargazers_count": 15,
+            "forks": 13,
+            "description": "Razorpay Payment Extension for WHMCS",
+            "language": "PHP"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-ios-sample-app",
+            "name": "razorpay-ios-sample-app",
+            "categories": ["Sample"],
+            "stargazers_count": 14,
+            "forks": 12,
+            "description": ":iphone: Sample app demonstrating integration of Razorpay iOS Framework",
+            "language": "Objective-C"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-cordova-sample-app",
+            "name": "razorpay-cordova-sample-app",
+            "categories": ["Sample"],
+            "stargazers_count": 14,
+            "forks": 36,
+            "description": ":iphone: Razorpay Sample Application for Cordova, Ionic v1 and Ionic v2",
+            "language": "JavaScript"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/trino-gateway",
+            "name": "trino-gateway",
+            "categories": ["Featured"],
+            "stargazers_count": 13,
+            "forks": 0,
+            "description": "Traffic routing for Trino Clusters",
+            "language": "Go"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-prestashop",
+            "name": "razorpay-prestashop",
+            "categories": ["Integrations"],
+            "stargazers_count": 11,
+            "forks": 8,
+            "description": "Prestashop plugin for Razorpay",
+            "language": "PHP"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-edd",
+            "name": "razorpay-edd",
+            "categories": ["Integrations"],
+            "stargazers_count": 11,
+            "forks": 4,
+            "description": "Razorpay plugin for Wordpress Easy Digital Downloads",
+            "language": "PHP"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-cscart",
+            "name": "razorpay-cscart",
+            "categories": ["Integrations"],
+            "stargazers_count": 10,
+            "forks": 1,
+            "description": "Razorpay Payment Extension for CS Cart",
+            "language": "PHP"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-arastta",
+            "name": "razorpay-arastta",
+            "categories": ["Integrations"],
+            "stargazers_count": 9,
+            "forks": 0,
+            "description": "Razorpay Payment Extension for Arastta stores",
+            "language": "PHP"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-android-custom-sample-app",
+            "name": "razorpay-android-custom-sample-app",
+            "categories": ["Sample"],
+            "stargazers_count": 9,
+            "forks": 6,
+            "description": "Sample app to demonstrate the custom UI integration",
+            "language": "Kotlin"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-quick-payments",
+            "name": "razorpay-quick-payments",
+            "categories": ["Integrations"],
+            "stargazers_count": 9,
+            "forks": 12,
+            "description": "Razorpay Quick Payments plugin for WordPress",
+            "language": "PHP"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-dot-net",
+            "name": "razorpay-dot-net",
+            "categories": ["SDKs"],
+            "stargazers_count": 8,
+            "forks": 30,
+            "description": "Razorpay .NET SDK",
+            "language": "C#"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-dotnet-testapp",
+            "name": "razorpay-dotnet-testapp",
+            "categories": ["Sample"],
+            "stargazers_count": 8,
+            "forks": 14,
+            "description": "Test app for .net integration",
+            "language": "ASP.NET"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/lytics.js",
+            "name": "lytics.js",
+            "categories": ["Featured"],
+            "stargazers_count": 8,
+            "forks": 0,
+            "description": "Simpler analytics using HTML attributes.",
+            "language": "JavaScript"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-capacitor",
+            "name": "razorpay-capacitor",
+            "categories": ["Mobile"],
+            "stargazers_count": 8,
+            "forks": 16,
+            "description": "Capacitor wrapper around Razorpay's Android and iOS SDKs",
+            "language": "TypeScript"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-woocommerce-subscriptions",
+            "name": "razorpay-woocommerce-subscriptions",
+            "categories": ["Integrations"],
+            "stargazers_count": 6,
+            "forks": 5,
+            "description": "Razorpay WooCommerce Subscriptions Plugin",
+            "language": "PHP"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/component.js",
+            "name": "component.js",
+            "categories": ["Featured"],
+            "stargazers_count": 4,
+            "forks": 1,
+            "description": "Simple and Opinionated way to build UI Components",
+            "language": "JavaScript"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/terraform-aws-ssl-ciphers",
+            "name": "terraform-aws-ssl-ciphers",
+            "categories": ["Featured"],
+            "stargazers_count": 4,
+            "forks": 6,
+            "description": "Common SSL Negotiation Policies to be used with AWS ELBs using Terraform",
+            "language": "HCL"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/common-frontend-utils",
+            "name": "common-frontend-utils",
+            "categories": ["Featured"],
+            "stargazers_count": 4,
+            "forks": 0,
+            "description": "Common Frontend Utils",
+            "language": "JavaScript"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-java-testapp",
+            "name": "razorpay-java-testapp",
+            "categories": ["Sample"],
+            "stargazers_count": 3,
+            "forks": 11,
+            "description": "Sample app for Razorpay Java Integration",
+            "language": "Java"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/omnipay-razorpay",
+            "name": "omnipay-razorpay",
+            "categories": ["Integrations"],
+            "stargazers_count": 1,
+            "forks": 9,
+            "description": "Razorpay plugin for Omnipay Payment Processing Library",
+            "language": "PHP"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/citadel",
+            "name": "citadel",
+            "categories": ["Featured"],
+            "stargazers_count": 1,
+            "forks": 1,
+            "description": "Documentation Platform",
+            "language": "JavaScript"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/payment-button-wordpress-plugin",
+            "name": "payment-button-wordpress-plugin",
+            "categories": ["Integrations"],
+            "stargazers_count": 1,
+            "forks": 0,
+            "description": "Payment button plugin for wordpress.",
+            "language": "PHP"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/subscriptions-magento-plugin",
+            "name": "subscriptions-magento-plugin",
+            "categories": ["Integrations"],
+            "stargazers_count": 1,
+            "forks": 1,
+            "description": "Subscriptions plugin for magento.",
+            "language": "PHP"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-flutter-customui",
+            "name": "razorpay-flutter-customui",
+            "categories": ["Mobile"],
+            "stargazers_count": 1,
+            "forks": 7,
+            "description": "Razorpay Flutter Plugin for Customui",
+            "language": "Objective-C"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-customui-pod",
+            "name": "razorpay-customui-pod",
+            "categories": ["Mobile"],
+            "stargazers_count": 1,
+            "forks": 0,
+            "description": "iOS CustomUI SDK of Razorpay",
+            "language": "Objective-C"
+        },
+        {
+            "html_url": "https:\/\/github.com\/razorpay\/razorpay-gravity-forms",
+            "name": "razorpay-gravity-forms",
+            "categories": ["Integrations"],
+            "stargazers_count": 0,
+            "forks": 2,
+            "description": "Razorpay Gravity Forms plugin",
+            "language": "PHP"
+        }
+    ]
+}

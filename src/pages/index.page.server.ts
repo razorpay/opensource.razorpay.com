@@ -15,14 +15,10 @@ export interface PageData {
 export async function onBeforeRender() {
   const [{ data: projects }, { data: members }, { default: talks }] =
     await Promise.all([
-      axios.get('https://api.github.com/orgs/razorpay/repos'),
+      import('../repos.json'),
       axios.get('https://api.github.com/orgs/razorpay/members'),
       import('../talks.yaml'),
     ]);
-
-  // Attach categories to projects
-  // Check if we can use GitHub repository topics for this?
-  projects[0].categories = ['Dev', 'Design'];
 
   return {
     pageContext: {

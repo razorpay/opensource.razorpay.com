@@ -26,10 +26,6 @@ const FeaturedProjects = ({ projects }: { projects: Project[] }) => (
         <h1 className="text-5xl text-slate-900 font-extrabold leading-snug">
           Projects
         </h1>
-        <p className="mt-8 text-slate-500">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
-          pariatur eligendi, veritatis consectetur libero nobis architecto.
-        </p>
         <a
           href="#"
           className="inline-block mt-12 bg-blue-600 px-6 py-2 text-white font-semibold rounded-sm shadow-lg shadow-blue-100 transition-colors hover:bg-blue-500"
