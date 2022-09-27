@@ -26,7 +26,7 @@ const Footer = ({ isDark }: { isDark?: boolean }) => (
         <a href="https://engineering.razorpay.com/">Engineering Blog</a>
         <a href="https://razorpay.com/jobs/">Careers</a>
         <a href="https://razorpay.com/docs/">Documentation</a>
-        <a href="https://github.com/Razorpay">
+     </nav>
 
       {/* Social links */}
       <nav
@@ -34,6 +34,7 @@ const Footer = ({ isDark }: { isDark?: boolean }) => (
           isDark ? 'text-slate-300' : 'text-slate-700'
         }`}
       >
+        <a href="https://github.com/Razorpay">
           <FaGithub size="1rem" />
         </a>
         <a href="https://twitter.com/Razorpay">

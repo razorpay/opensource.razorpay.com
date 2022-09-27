@@ -15,6 +15,7 @@ const Navigation = ({ className, ...props }: PropsOfHtmlElement) => (
       <FaGithub size="0.875rem" className="mr-1.5" />
       GitHub
     </a>
+  </nav>
 );
 
 const Header = () => {
