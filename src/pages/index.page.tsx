@@ -25,7 +25,7 @@ export const Page = ({ projects, talks, members }: PageData) => {
         <h1 className="text-2xl">
           Does working on open-source project excite you? We're hiring!
         </h1>
-        <a href="https://razorpay.com/jobs/" class="inline-block bg-blue-600 px-6 py-2 text-white font-semibold rounded-sm shadow-lg shadow-blue-100 transition-colors hover:bg-blue-500">
+        <a href="https://razorpay.com/jobs/" className="inline-block bg-blue-600 px-6 py-2 text-white font-semibold rounded-sm shadow-lg shadow-blue-100 transition-colors hover:bg-blue-500">
           Join Razorpay
         </a>&nbsp;
         <Button as="a" href="https://stackshare.io/razorpay/open-source-showcase" className="mt-12">
