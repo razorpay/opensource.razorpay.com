@@ -1,10 +1,16 @@
 import { useMemo, useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
+
 import FilterTag from '../FilterTag';
 import ProjectCard, { Project } from './Card';
 
 const ALL_PROJECTS_FILTER = 'All Projects';
 
 const AllProjects = ({ projects }: { projects: Project[] }) => {
+  const isMd = useMediaQuery({ minWidth: 768 });
+  const isLg = useMediaQuery({ minWidth: 1024 });
+  const numColumns = isLg ? 3 : isMd ? 2 : 1;
+
   const [filter, setFilter] = useState(ALL_PROJECTS_FILTER);
   const categories = useMemo(
     () =>
@@ -19,7 +25,7 @@ const AllProjects = ({ projects }: { projects: Project[] }) => {
           ++counter[category];
           return counter;
         }, {}),
-    [projects]
+    []
   );
 
   return (
@@ -30,12 +36,12 @@ const AllProjects = ({ projects }: { projects: Project[] }) => {
           <div className="guide-y" />
           <div className="guide-y" />
         </div>
-        <div className="flex flex-col justify-center container mx-auto pt-24 pb-10 relative z-10">
+        <div className="flex flex-col justify-center container mx-auto pt-24 pb-10 px-4 relative z-10">
           <h1 className="text-5xl font-extrabold text-center">
             Our <span className="text-blue-600">open source</span> projects
           </h1>
 
-          <div className="flex flex-wrap px-8 mt-24 gap-4 justify-center">
+          <div className="flex flex-wrap px-4 mt-24 gap-4 md:justify-center">
             {Object.keys(categories).map((category) => (
               <FilterTag
                 key={category}
@@ -53,16 +59,18 @@ const AllProjects = ({ projects }: { projects: Project[] }) => {
       <div className="relative pb-56">
         {/* Horizontal guides */}
         <div className="absolute inset-0 space-y-42">
-          {[...new Array(Math.ceil(projects.length / 3))].map((_, idx) => (
-            <div className="guide-x" key={idx} />
-          ))}
+          {[...new Array(Math.ceil(projects.length / numColumns))].map(
+            (_, idx) => (
+              <div className="guide-x" key={idx} />
+            )
+          )}
           <div className="guide-x" />
         </div>
 
         {/* Vertical guides (4 on desktop) */}
-        <div className="absolute inset-0 container mx-auto grid grid-cols-3">
-          <div className="guide-y" />
-          <div className="guide-y" />
+        <div className="absolute inset-0 container mx-auto grid md:grid-cols-2 lg:grid-cols-3">
+          <div className="guide-y hidden md:block" />
+          <div className="guide-y hidden lg:block" />
 
           {/* Last column has two guides spaced between */}
           <div className="flex justify-between">
@@ -71,7 +79,7 @@ const AllProjects = ({ projects }: { projects: Project[] }) => {
           </div>
         </div>
 
-        <div className="container mx-auto grid grid-cols-3">
+        <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3">
           {projects
             .filter(
               ({ categories }) =>

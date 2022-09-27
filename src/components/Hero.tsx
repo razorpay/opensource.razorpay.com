@@ -96,12 +96,12 @@ const MemberCircle = ({
 );
 
 const Hero = ({ members }: { members: Member[] }) => (
-  <div className="h-[80vh] overflow-hidden relative">
+  <div className="min-h-[80vh] overflow-hidden relative">
     <BlurEffects />
     <GridVignette />
 
     <div className="container mx-auto grid grid-cols-[2fr,1fr] gap-32 relative z-10">
-      <div className="mt-44 ml-4">
+      <div className="my-44 ml-4 mb-44">
         <h1 className="text-6xl text-slate-900 font-extrabold leading-snug">
           Build. Contribute.
           <br />
@@ -115,7 +115,7 @@ const Hero = ({ members }: { members: Member[] }) => (
         </Button>
       </div>
 
-      <div className="relative flex items-center justify-center mt-40 -mr-80">
+      <div className="relative flex items-center justify-center -mr-80">
         <div
           className="hero-ring group"
           style={{ '--radius': '22rem', '--total': 15 } as React.CSSProperties}

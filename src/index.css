@@ -120,12 +120,17 @@ html {
   @apply scroll-smooth;
 }
 
-header nav a {
+header nav a,
+header button {
   @apply hover:text-blue-600 hover:bg-slate-300/20 px-3 py-1 rounded-full transition;
 }
 
+.header-blur-bg {
+  @apply border border-slate-300/50 bg-slate-50/80 backdrop-blur-md backdrop-saturate-150;
+}
+
 footer a {
-  @apply transition-colors hover:text-blue-600;
+  @apply transition-colors hover:text-blue-600 whitespace-nowrap;
 }
 
 .mask {

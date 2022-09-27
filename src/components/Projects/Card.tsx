@@ -38,7 +38,7 @@ const ProjectCard = ({
 }: Project) => (
   <a
     href={html_url}
-    className="m-4 h-36 flex flex-col bg-white rounded px-6 py-4 shadow shadow-black/5 group transition transform hover:-translate-y-0.5 hover:scale-1015 hover:shadow-black/10"
+    className="m-4 h-36 flex flex-col min-w-0 bg-white rounded px-6 py-4 shadow shadow-black/5 group transition transform hover:-translate-y-0.5 hover:scale-1015 hover:shadow-black/10"
   >
     <div className="flex justify-between items-center">
       <div className="text-xl font-bold whitespace-nowrap text-ellipsis overflow-hidden min-w-0 transition-colors group-hover:text-blue-600">
