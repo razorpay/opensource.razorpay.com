@@ -23,10 +23,14 @@ export const Page = ({ projects, talks, members }: PageData) => {
       {/* TODO: Update content here if this section is needed */}
       <Callout>
         <h1 className="text-2xl">
-          “Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-          qui laudantium!”
+          Does working on open-source project excite you? We're hiring!
         </h1>
-        <Button className="mt-12">Final CTA</Button>
+        <a href="https://razorpay.com/jobs/" class="inline-block bg-blue-600 px-6 py-2 text-white font-semibold rounded-sm shadow-lg shadow-blue-100 transition-colors hover:bg-blue-500">
+          Join Razorpay
+        </a>&nbsp;
+        <Button as="a" href="https://stackshare.io/razorpay/open-source-showcase" className="mt-12">
+          View Stack
+        </Button>
       </Callout>
 
       <Footer />

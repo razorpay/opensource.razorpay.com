@@ -108,8 +108,7 @@ const Hero = ({ members }: { members: Member[] }) => (
           Open Source.
         </h1>
         <p className="mt-8 text-slate-500 text-lg max-w-xl">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
-          alias cum totam sed, quisquam velit excepturi quae earum.
+          As a company built on open-source, these are some of the projects that we have contributed back to the community.
         </p>
         <Button as="a" href="#projects" className="mt-12">
           Explore projects

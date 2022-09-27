@@ -1,4 +1,4 @@
-import { FaGithub, FaTwitter, FaLinkedinIn } from 'react-icons/fa/index';
+import { FaGithub, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa/index';
 
 const Footer = ({ isDark }: { isDark?: boolean }) => (
   <footer
@@ -19,19 +19,22 @@ const Footer = ({ isDark }: { isDark?: boolean }) => (
           isDark ? 'text-slate-300' : 'text-slate-700'
         }`}
       >
-        <a href="#projects">Projects</a>
-        <a href="#talks">Talks</a>
-        <a href="#">Engineering Blog</a>
-        <a href="#">Careers</a>
-        <a href="#">Documentation</a>
-        <a href="#">
+        {/*<a href="#projects">Projects</a>*/}
+        <a href="https://github.com/razorpay/public-presentations">Talks</a>
+        <a href="https://engineering.razorpay.com/">Engineering Blog</a>
+        <a href="https://razorpay.com/jobs/">Careers</a>
+        <a href="https://razorpay.com/docs/">Documentation</a>
+        <a href="https://github.com/Razorpay">
           <FaGithub size="1rem" />
         </a>
-        <a href="#">
+        <a href="https://twitter.com/Razorpay">
           <FaTwitter size="1rem" />
         </a>
-        <a href="#">
+        <a href="https://linkedin.com/company/razorpay">
           <FaLinkedinIn size="1rem" />
+        </a>
+        <a href="https://www.instagram.com/razorpay/">
+          <FaInstagram size="1rem" />
         </a>
       </nav>
     </div>

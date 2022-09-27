@@ -20,7 +20,6 @@ const Header = () => (
     <nav className="flex items-center space-x-2 font-semibold text-sm">
       <a href="#projects">Projects</a>
       <a href="#talks">Talks</a>
-      <a href="#">Careers</a>
       <a href="https://github.com/razorpay" className="flex items-center">
         <FaGithub size="0.875rem" className="mr-1.5" />
         GitHub
