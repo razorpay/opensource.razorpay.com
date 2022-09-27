@@ -25,12 +25,18 @@ export const Page = ({ projects, talks, members }: PageData) => {
         <h1 className="text-2xl">
           Does working on open-source project excite you? We're hiring!
         </h1>
-        <a href="https://razorpay.com/jobs/" className="inline-block bg-blue-600 px-6 py-2 text-white font-semibold rounded-sm shadow-lg shadow-blue-100 transition-colors hover:bg-blue-500">
-          Join Razorpay
-        </a>&nbsp;
-        <Button as="a" href="https://stackshare.io/razorpay/open-source-showcase" className="mt-12">
-          View Stack
-        </Button>
+
+        <div className="flex flex-col sm:flex-row mt-12 space-y-4 sm:space-x-4 sm:space-y-0 justify-center mx-auto max-w-xs">
+          <Button as="a" href="https://razorpay.com/jobs/">
+            Join Razorpay
+          </Button>
+          <Button
+            as="a"
+            href="https://stackshare.io/razorpay/open-source-showcase"
+          >
+            View Stack
+          </Button>
+        </div>
       </Callout>
 
       <Footer />
