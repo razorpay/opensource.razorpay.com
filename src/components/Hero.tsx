@@ -100,9 +100,9 @@ const Hero = ({ members }: { members: Member[] }) => (
     <BlurEffects />
     <GridVignette />
 
-    <div className="container mx-auto grid grid-cols-[2fr,1fr] gap-32 relative z-10">
-      <div className="my-44 ml-4 mb-44">
-        <h1 className="text-6xl text-slate-900 font-extrabold leading-snug">
+    <div className="container mx-auto grid px-4 md:grid-cols-[2fr,1fr] gap-32 relative z-10">
+      <div className="my-32 mb-80 md:my-44 ml-4 relative z-10">
+        <h1 className="text-5xl md:text-6xl text-slate-900 font-extrabold leading-snug">
           Build. Contribute.
           <br />
           Open Source.
@@ -116,7 +116,7 @@ const Hero = ({ members }: { members: Member[] }) => (
         </Button>
       </div>
 
-      <div className="relative flex items-center justify-center -mr-80">
+      <div className="-mt-32 relative flex items-center justify-center md:mt-0 md:-mr-80 scale-90 md:scale-100">
         <div
           className="hero-ring group"
           style={{ '--radius': '22rem', '--total': 15 } as React.CSSProperties}
