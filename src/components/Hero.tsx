@@ -108,7 +108,8 @@ const Hero = ({ members }: { members: Member[] }) => (
           Open Source.
         </h1>
         <p className="mt-8 text-slate-500 text-lg max-w-xl">
-          As a company built on open-source, these are some of the projects that we have contributed back to the community.
+          As a company built on open-source, these are some of the projects that
+          we have contributed back to the community.
         </p>
         <Button as="a" href="#projects" className="mt-12">
           Explore projects
@@ -147,10 +148,7 @@ const Hero = ({ members }: { members: Member[] }) => (
         <div className="absolute w-48 h-48 rounded-full overflow-hidden border border-dashed border-slate-300/60 animate-spin [animation-duration:100s]" />
 
         <div className="absolute w-32 h-32 rounded-full overflow-hidden bg-slate-50 shadow-sm">
-          <img
-            src="https://pbs.twimg.com/profile_images/1347148074179694592/gHhQtgwX_400x400.jpg"
-            className="brightness-150"
-          />
+          <img src="/rzp-engg.jpeg" className="brightness-150" />
         </div>
       </div>
     </div>
