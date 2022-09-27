@@ -32,6 +32,21 @@ async function render(pageContext: PageContextBuiltIn & PageContext) {
         <meta name="description" content="${desc}" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://opensource.razorpay.com/">
+        <meta property="og:title" content=${title}>
+        <meta property="og:description" content=${desc}>
+        <meta property="og:image" content="https://opensource.razorpay.com/site-preview.png">
+        
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://opensource.razorpay.com/">
+        <meta property="twitter:title" content=${title}>
+        <meta property="twitter:description" content=${desc}>
+        <meta property="twitter:image" content="https://opensource.razorpay.com/site-preview.png">
+
         <link
           href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
