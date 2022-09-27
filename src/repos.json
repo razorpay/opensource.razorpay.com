@@ -15,7 +15,7 @@
             "categories": ["Finance"],
             "stargazers_count": 266,
             "forks": 108,
-            "description": ":bank: IFSC Codes Repository",
+            "description": "🏦 IFSC Codes Repository",
             "language": "Go"
         },
         {
@@ -96,7 +96,7 @@
             "categories": ["Finance"],
             "stargazers_count": 69,
             "forks": 35,
-            "description": ":bank: Standalone API for IFSC codes",
+            "description": "🏦 Standalone API for IFSC codes",
             "language": "CSS"
         },
         {
@@ -204,7 +204,7 @@
             "categories": ["Mobile"],
             "stargazers_count": 22,
             "forks": 11,
-            "description": ":iphone: CocoaPod implementation of Razorpay's Payment SDK. Refer for instructions:",
+            "description": "📱 CocoaPod implementation of Razorpay's Payment SDK. Refer for instructions:",
             "language": "Objective-C"
         },
         {
@@ -240,7 +240,7 @@
             "categories": ["Sample"],
             "stargazers_count": 14,
             "forks": 12,
-            "description": ":iphone: Sample app demonstrating integration of Razorpay iOS Framework",
+            "description": "📱 Sample app demonstrating integration of Razorpay iOS Framework",
             "language": "Objective-C"
         },
         {
@@ -249,7 +249,7 @@
             "categories": ["Sample"],
             "stargazers_count": 14,
             "forks": 36,
-            "description": ":iphone: Razorpay Sample Application for Cordova, Ionic v1 and Ionic v2",
+            "description": "📱 Razorpay Sample Application for Cordova, Ionic v1 and Ionic v2",
             "language": "JavaScript"
         },
         {
