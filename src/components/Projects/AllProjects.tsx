@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
 import FilterTag from '../FilterTag';
@@ -6,9 +6,18 @@ import ProjectCard, { Project } from './Card';
 
 const ALL_PROJECTS_FILTER = 'All Projects';
 
+const useIsMounted = () => {
+  const [isMounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  return isMounted;
+};
+
 const AllProjects = ({ projects }: { projects: Project[] }) => {
   const isMd = useMediaQuery({ minWidth: 768 });
   const isLg = useMediaQuery({ minWidth: 1024 });
+  const isMounted = useIsMounted();
   const numColumns = isLg ? 3 : isMd ? 2 : 1;
 
   const [filter, setFilter] = useState(ALL_PROJECTS_FILTER);
@@ -26,6 +35,11 @@ const AllProjects = ({ projects }: { projects: Project[] }) => {
           return counter;
         }, {}),
     []
+  );
+
+  const filteredProjects = projects.filter(
+    ({ categories }) =>
+      filter === ALL_PROJECTS_FILTER || categories?.includes(filter)
   );
 
   return (
@@ -59,11 +73,10 @@ const AllProjects = ({ projects }: { projects: Project[] }) => {
       <div className="relative pb-56">
         {/* Horizontal guides */}
         <div className="absolute inset-0 space-y-42">
-          {[...new Array(Math.ceil(projects.length / numColumns))].map(
-            (_, idx) => (
-              <div className="guide-x" key={idx} />
-            )
-          )}
+          {isMounted &&
+            [...new Array(Math.ceil(filteredProjects.length / numColumns))].map(
+              (_, idx) => <div className="guide-x" key={idx} />
+            )}
           <div className="guide-x" />
         </div>
 
@@ -80,14 +93,9 @@ const AllProjects = ({ projects }: { projects: Project[] }) => {
         </div>
 
         <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3">
-          {projects
-            .filter(
-              ({ categories }) =>
-                filter === ALL_PROJECTS_FILTER || categories?.includes(filter)
-            )
-            .map((project: Project) => (
-              <ProjectCard key={project.id} {...project} />
-            ))}
+          {filteredProjects.map((project: Project) => (
+            <ProjectCard key={project.name} {...project} />
+          ))}
         </div>
       </div>
     </div>

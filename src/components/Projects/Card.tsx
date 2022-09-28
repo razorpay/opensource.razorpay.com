@@ -2,7 +2,6 @@ import { HiOutlineStar, HiOutlineExternalLink } from 'react-icons/hi/index';
 import { TbGitFork } from 'react-icons/tb/index';
 
 export interface Project {
-  id: number;
   html_url: string;
   name: string;
   stargazers_count: number;
