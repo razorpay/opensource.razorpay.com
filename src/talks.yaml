@@ -13,8 +13,8 @@
     - name: Akash Hamirwasia
       avatar: https://github.com/blenderskool.png
       url: https://github.com/blenderskool
-  slides: https://docs.google.com/presentation/d/1cRZjDAMK_ihQ4RK3Rd3lwjdsFqN3-vM1OOJ2N7_FTaM/
-  url: https://docs.google.com/presentation/d/1cRZjDAMK_ihQ4RK3Rd3lwjdsFqN3-vM1OOJ2N7_FTaM/
+  slides: https://akashhamirwasia.com/talks/my-learnings-from-building-blaze-as-foss-project
+  url: https://akashhamirwasia.com/talks/my-learnings-from-building-blaze-as-foss-project
 
 - published: Oct 14, 2021
   title: Kubecon - How we built a Cloud native Dev stack at scale
