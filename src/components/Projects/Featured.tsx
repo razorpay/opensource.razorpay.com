@@ -16,7 +16,7 @@ const FeaturedProjects = ({ projects }: { projects: Project[] }) => (
       <div className="-left-48 absolute w-10/12 mask">
         <div className="grid grid-cols-3 origin-top-left scale-75 -rotate-12 border-x border-dashed border-slate-300 px-6">
           {projects.slice(0, 24).map((project) => (
-            <ProjectCard key={project.id} {...project} />
+            <ProjectCard key={project.name} {...project} />
           ))}
         </div>
       </div>
