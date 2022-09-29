@@ -56,6 +56,16 @@ async function render(pageContext: PageContextBuiltIn & PageContext) {
       </head>
       <body>
         <div id="page-view">${dangerouslySkipEscape(pageHtml)}</div>
+
+        ${dangerouslySkipEscape(
+          // Enable GTM on prod
+          import.meta.env.PROD
+            ? `<script async src="https://www.googletagmanager.com/gtag/js?id=G-EFWRVJFRKV"></script>
+                <script>
+                  window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-EFWRVJFRKV');
+                </script>`
+            : ''
+        )}
       </body>
     </html>`;
 
