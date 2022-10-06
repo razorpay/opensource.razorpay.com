@@ -82,7 +82,7 @@
   }
 
   .hero-ring {
-    @apply circle absolute border border-dashed border-slate-300/60 animate-spin hover:pause pointer-events-none;
+    @apply circle absolute border border-dashed border-slate-300/60 dark:border-slate-600/50 animate-spin hover:pause pointer-events-none;
     animation-duration: 100s;
   }
 }

@@ -83,7 +83,7 @@ const MemberCircle = ({
   imgClassName = '',
 }: Member & { style?: React.CSSProperties; imgClassName?: string }) => (
   <a
-    className="w-16 h-16 p-1.5 border border-dashed border-slate-300/60 bg-slate-50 rounded-full pointer-events-auto"
+    className="w-16 h-16 p-1.5 border border-dashed border-slate-300/60 dark:border-slate-600/50 bg-slate-50 dark:bg-transparent rounded-full pointer-events-auto"
     href={html_url}
     target="_blank"
     style={style}
@@ -149,7 +149,7 @@ const Hero = ({ members }: { members: Member[] }) => (
           ))}
         </div>
 
-        <div className="absolute w-48 h-48 rounded-full overflow-hidden border border-dashed border-slate-300/60 animate-spin [animation-duration:100s]" />
+        <div className="absolute w-48 h-48 rounded-full overflow-hidden border border-dashed border-slate-300/60 dark:border-slate-600/50 animate-spin [animation-duration:100s]" />
 
         <div className="absolute w-32 h-32 rounded-full overflow-hidden bg-slate-50 shadow-sm">
           <img src="/rzp-engg.jpeg" className="brightness-150" />
