@@ -111,7 +111,7 @@
 }
 
 .circle {
-  grid-template-areas: "layer";
+  grid-template-areas: 'layer';
   @apply rounded-full place-items-center grid;
 
   --radius: 25vmin;

@@ -1,5 +1,5 @@
-import { HiOutlineStar, HiOutlineExternalLink } from "react-icons/hi/index";
-import { TbGitFork } from "react-icons/tb/index";
+import { HiOutlineStar, HiOutlineExternalLink } from 'react-icons/hi/index';
+import { TbGitFork } from 'react-icons/tb/index';
 
 export interface Project {
   html_url: string;
@@ -12,19 +12,19 @@ export interface Project {
 }
 
 const languages: Record<string, string> = {
-  JavaScript: "bg-yellow-300",
-  Go: "bg-cyan-300",
-  PHP: "bg-violet-900",
-  CSS: "bg-purple-800",
-  Python: "bg-sky-800",
-  Ruby: "bg-red-800",
-  Java: "bg-yellow-700",
-  HTML: "bg-orange-600",
-  "Objective-C": "bg-blue-600",
-  Shell: "bg-lime-500",
-  "C#": "bg-emerald-600",
-  "ASP.NET": "bg-fuchsia-600",
-  TypeScript: "bg-blue-800",
+  JavaScript: 'bg-yellow-300',
+  Go: 'bg-cyan-300',
+  PHP: 'bg-violet-900',
+  CSS: 'bg-purple-800',
+  Python: 'bg-sky-800',
+  Ruby: 'bg-red-800',
+  Java: 'bg-yellow-700',
+  HTML: 'bg-orange-600',
+  'Objective-C': 'bg-blue-600',
+  Shell: 'bg-lime-500',
+  'C#': 'bg-emerald-600',
+  'ASP.NET': 'bg-fuchsia-600',
+  TypeScript: 'bg-blue-800',
 };
 
 const ProjectCard = ({

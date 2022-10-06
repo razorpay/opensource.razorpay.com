@@ -1,10 +1,10 @@
-import { useEffect, useMemo, useState } from "react";
-import { useMediaQuery } from "react-responsive";
+import { useEffect, useMemo, useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 
-import FilterTag from "../FilterTag";
-import ProjectCard, { Project } from "./Card";
+import FilterTag from '../FilterTag';
+import ProjectCard, { Project } from './Card';
 
-const ALL_PROJECTS_FILTER = "All Projects";
+const ALL_PROJECTS_FILTER = 'All Projects';
 
 const useIsMounted = () => {
   const [isMounted, setMounted] = useState(false);

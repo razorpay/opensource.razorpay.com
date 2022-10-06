@@ -1,11 +1,11 @@
-import Button from "../components/Button";
-import Callout from "../components/Callout";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import AllProjects from "../components/Projects/AllProjects";
-import Talks from "../components/Talks/Talks";
-import { PageData } from "./index.page.server";
+import Button from '../components/Button';
+import Callout from '../components/Callout';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import Hero from '../components/Hero';
+import AllProjects from '../components/Projects/AllProjects';
+import Talks from '../components/Talks/Talks';
+import { PageData } from './index.page.server';
 
 export const Page = ({ projects, talks, members }: PageData) => {
   return (

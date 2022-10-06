@@ -1,38 +1,38 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
 const ThemeSwitcher = () => {
-  const [theme, setTheme] = useState<any>("");
+  const [theme, setTheme] = useState<any>('');
 
   useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setTheme('dark');
     } else {
-      setTheme("light");
+      setTheme('light');
     }
   }, []);
   useEffect(() => {
-    if (localStorage.getItem("theme")) {
-      setTheme(localStorage.getItem("theme"));
+    if (localStorage.getItem('theme')) {
+      setTheme(localStorage.getItem('theme'));
     } else {
-      localStorage.setItem("theme", "light");
+      localStorage.setItem('theme', 'light');
     }
   }, []);
 
   const handleThemeSwitch = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-    localStorage.setItem("theme", theme === "dark" ? "light" : "dark");
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+    localStorage.setItem('theme', theme === 'dark' ? 'light' : 'dark');
   };
 
   useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
     } else {
-      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.remove('dark');
     }
   }, [theme]);
   return (
     <button onClick={handleThemeSwitch} className="flex justify-center">
-      {theme === "dark" ? (
+      {theme === 'dark' ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

@@ -1,5 +1,5 @@
-import React from "react";
-import Button from "./Button";
+import React from 'react';
+import Button from './Button';
 
 export interface Member {
   html_url: string;
@@ -80,7 +80,7 @@ const MemberCircle = ({
   html_url,
   avatar_url,
   style = {},
-  imgClassName = "",
+  imgClassName = '',
 }: Member & { style?: React.CSSProperties; imgClassName?: string }) => (
   <a
     className="w-16 h-16 p-1.5 border border-dashed border-slate-300/60 bg-slate-50 rounded-full pointer-events-auto"
@@ -123,12 +123,12 @@ const Hero = ({ members }: { members: Member[] }) => (
       <div className="-mt-32 relative flex items-center justify-center md:mt-0 md:-mr-80 scale-90 md:scale-100">
         <div
           className="hero-ring group"
-          style={{ "--radius": "22rem", "--total": 15 } as React.CSSProperties}
+          style={{ '--radius': '22rem', '--total': 15 } as React.CSSProperties}
         >
           {members.slice(10, 25).map((member, i) => (
             <MemberCircle
               key={member.id}
-              style={{ "--i": i } as React.CSSProperties}
+              style={{ '--i': i } as React.CSSProperties}
               imgClassName=""
               {...member}
             />
@@ -137,12 +137,12 @@ const Hero = ({ members }: { members: Member[] }) => (
 
         <div
           className="hero-ring group [animation-direction:reverse]"
-          style={{ "--radius": "12.5rem", "--total": 9 } as React.CSSProperties}
+          style={{ '--radius': '12.5rem', '--total': 9 } as React.CSSProperties}
         >
           {members.slice(0, 9).map((member, i) => (
             <MemberCircle
               key={member.id}
-              style={{ "--i": i } as React.CSSProperties}
+              style={{ '--i': i } as React.CSSProperties}
               imgClassName="[animation-direction:reverse]"
               {...member}
             />

@@ -3,7 +3,7 @@ import {
   FaTwitter,
   FaLinkedinIn,
   FaInstagram,
-} from "react-icons/fa/index";
+} from 'react-icons/fa/index';
 
 const Footer = ({ isDark }: { isDark?: boolean }) => (
   <footer className={`text-sm shadow-inner-xs bg-slate-100 dark:bg-slate-800`}>
