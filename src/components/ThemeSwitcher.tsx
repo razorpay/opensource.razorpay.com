@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { HiOutlineMoon, HiOutlineSun } from 'react-icons/hi';
+import { HiOutlineMoon, HiOutlineSun } from 'react-icons/hi/index';
 
 const ThemeSwitcher = () => {
   const getInitialState = () => {
