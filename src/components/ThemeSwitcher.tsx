@@ -16,16 +16,9 @@ const ThemeSwitcher = () => {
   const handleThemeSwitch = () => {
     localStorage.setItem('theme', theme === 'dark' ? 'light' : 'dark');
     setTheme(theme === 'dark' ? 'light' : 'dark');
+    document.documentElement.classList.toggle('dark');
   };
 
-  useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-    console.log('thee...', theme);
-  }, [theme]);
   return (
     <button onClick={handleThemeSwitch} className="flex justify-center">
       {theme === 'dark' ? (
