@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <header className="mt-2 mx-4 md:mx-auto max-w-3xl fixed top-0 left-0 right-0 z-20 ">
-      <div className="flex items-center justify-between py-3 pl-10 pr-8 header-blur-bg rounded-full  dark:backdrop-blur-sm">
+      <div className="flex items-center justify-between py-3 pl-10 pr-8 header-blur-bg rounded-full">
         <a href="/" className="transition-opacity hover:opacity-70">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ const Header = () => {
           </svg>
         </a>
 
-        <Navigation className="hidden md:flex items-center space-x-2 " />
+        <Navigation className="hidden md:flex items-center space-x-2" />
 
         <button
           className="md:hidden p-2"
