@@ -27,16 +27,11 @@ export const Page = ({ projects, talks, members }: PageData) => {
         </h1>
 
         <div className="flex flex-col sm:flex-row mt-12 space-y-4 sm:space-x-4 sm:space-y-0 justify-center mx-auto max-w-xs ">
-          <Button
-            as="a"
-            href="https://razorpay.com/jobs/"
-            className="dark:shadow-sm"
-          >
+          <Button as="a" href="https://razorpay.com/jobs/">
             Join Razorpay
           </Button>
           <Button
             as="a"
-            className="dark:shadow-sm"
             href="https://stackshare.io/razorpay/open-source-showcase"
           >
             View Stack

@@ -111,11 +111,7 @@ const Hero = ({ members }: { members: Member[] }) => (
           As a company built on open-source, these are some of the projects that
           we have contributed back to the community.
         </p>
-        <Button
-          as="a"
-          href="#projects"
-          className="mt-12 dark:shadow-slate-700 dark:shadow-sm"
-        >
+        <Button as="a" href="#projects" className="mt-12">
           Explore projects
         </Button>
       </div>
