@@ -21,6 +21,7 @@ const ThemeSwitcher = () => {
 
   return (
     <button onClick={handleThemeSwitch} className="flex justify-center">
+      <span className="hidden">{theme}</span>
       {theme === 'dark' ? (
         <HiOutlineSun size="1rem" />
       ) : (
