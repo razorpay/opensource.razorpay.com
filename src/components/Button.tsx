@@ -13,7 +13,7 @@ const Button = <T extends React.ElementType>({
   ...props
 }: ButtonProps<T>) => (
   <Tag
-    className={`inline-block bg-blue-600 px-6 py-2 text-white font-semibold rounded-sm shadow-lg shadow-blue-100 transition-colors hover:bg-blue-500 ${className}`}
+    className={`inline-block bg-blue-600 px-6 py-2 text-white font-semibold rounded-sm shadow-lg shadow-blue-100 dark:shadow-blue-900/30 transition-colors hover:bg-blue-500 ${className}`}
     {...props}
   />
 );

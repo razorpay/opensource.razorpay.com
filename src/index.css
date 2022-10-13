@@ -14,6 +14,17 @@
     );
     background-size: 1px 8px;
   }
+  .guide-y-dark {
+    width: 1px;
+    background: linear-gradient(
+      180deg,
+      #33415570,
+      #33415570 50%,
+      transparent 0,
+      transparent
+    );
+    background-size: 1px 8px;
+  }
 
   .guide-x {
     height: 1px;
@@ -21,6 +32,18 @@
       90deg,
       #cbd5e1aa,
       #cbd5e1aa 50%,
+      transparent 0,
+      transparent
+    );
+    background-size: 8px 1px;
+  }
+
+  .guide-x-dark {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      #33415570,
+      #33415570 50%,
       transparent 0,
       transparent
     );
@@ -59,7 +82,7 @@
   }
 
   .hero-ring {
-    @apply circle absolute border border-dashed border-slate-300/60 animate-spin hover:pause pointer-events-none;
+    @apply circle absolute border border-dashed border-slate-300/60 dark:border-slate-600/50 animate-spin hover:pause pointer-events-none;
     animation-duration: 100s;
   }
 }

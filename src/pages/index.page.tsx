@@ -22,11 +22,11 @@ export const Page = ({ projects, talks, members }: PageData) => {
 
       {/* TODO: Update content here if this section is needed */}
       <Callout>
-        <h1 className="text-2xl">
+        <h1 className="text-2xl dark:text-white">
           Does working on open-source project excite you? We're hiring!
         </h1>
 
-        <div className="flex flex-col sm:flex-row mt-12 space-y-4 sm:space-x-4 sm:space-y-0 justify-center mx-auto max-w-xs">
+        <div className="flex flex-col sm:flex-row mt-12 space-y-4 sm:space-x-4 sm:space-y-0 justify-center mx-auto max-w-xs ">
           <Button as="a" href="https://razorpay.com/jobs/">
             Join Razorpay
           </Button>

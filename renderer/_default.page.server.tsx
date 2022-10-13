@@ -54,6 +54,20 @@ async function render(pageContext: PageContextBuiltIn & PageContext) {
           rel="stylesheet"
         />
       </head>
+
+      ${dangerouslySkipEscape(
+        /**
+         * Adding this script in the head prevents flashes of theme change after page is rendered.
+         * The class is applied even before the page is rendered, so it renders with the final theme directly.
+         */
+        `<script type="text/javascript">
+            const theme = localStorage.getItem("theme");
+            if (theme === 'dark') {
+              document.documentElement.classList.add("dark");
+            }
+          </script>
+        `
+      )}
       <body>
         <div id="page-view">${dangerouslySkipEscape(pageHtml)}</div>
 

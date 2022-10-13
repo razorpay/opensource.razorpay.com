@@ -13,7 +13,7 @@ const GridVignette = () => (
       viewBox="0 0 307 184"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute -top-8 -left-20 w-72 transform rotate-90 text-slate-200"
+      className="absolute -top-8 -left-20 w-72 transform rotate-90 text-slate-200 dark:text-slate-800"
     >
       <path
         fillRule="evenodd"
@@ -27,7 +27,7 @@ const GridVignette = () => (
       viewBox="0 0 307 184"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute -bottom-8 -left-20 w-96 text-slate-100"
+      className="absolute -bottom-8 -left-20 w-96 text-slate-100 dark:text-slate-800"
     >
       <path
         fillRule="evenodd"
@@ -41,7 +41,7 @@ const GridVignette = () => (
       viewBox="0 0 307 184"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute -bottom-8 -right-28 w-96 text-slate-100 transform -rotate-[90deg]"
+      className="absolute -bottom-8 -right-28 w-96 text-slate-100 dark:text-slate-800 transform -rotate-[90deg]"
     >
       <path
         fillRule="evenodd"
@@ -55,7 +55,7 @@ const GridVignette = () => (
       viewBox="0 0 307 184"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute -top-8 -right-32 w-72 transform rotate-45 text-slate-100"
+      className="absolute -top-8 -right-32 w-72 transform rotate-45 text-slate-100 dark:text-slate-800"
     >
       <path
         fillRule="evenodd"
@@ -69,10 +69,10 @@ const GridVignette = () => (
 
 const BlurEffects = () => (
   <>
-    <div className="absolute top-16 left-16 w-64 h-64 bg-blue-400/40 blur-3xl animate-pulse" />
-    <div className="absolute bottom-16 right-16 w-96 h-96 bg-blue-400/20 blur-3xl animate-pulse animate-delay-600" />
-    <div className="absolute -bottom-36 left-96 w-56 h-56 bg-blue-400/20 blur-2xl animate-pulse animate-delay-300" />
-    <div className="absolute -top-16 right-72 w-48 h-48 bg-blue-400/40 blur-3xl animate-pulse animate-delay-900" />
+    <div className="absolute top-16 left-16 w-64 h-64 bg-blue-400/40 dark:bg-blue-800/40 blur-3xl animate-pulse" />
+    <div className="absolute bottom-16 right-16 w-96 h-96 bg-blue-400/20 dark:bg-blue-800/40 blur-3xl animate-pulse animate-delay-600" />
+    <div className="absolute -bottom-36 left-96 w-56 h-56 bg-blue-400/20 dark:bg-blue-800/40 blur-2xl animate-pulse animate-delay-300" />
+    <div className="absolute -top-16 right-72 w-48 h-48 bg-blue-400/40 dark:bg-blue-800/40 blur-3xl animate-pulse animate-delay-900" />
   </>
 );
 
@@ -83,7 +83,7 @@ const MemberCircle = ({
   imgClassName = '',
 }: Member & { style?: React.CSSProperties; imgClassName?: string }) => (
   <a
-    className="w-16 h-16 p-1.5 border border-dashed border-slate-300/60 bg-slate-50 rounded-full pointer-events-auto"
+    className="w-16 h-16 p-1.5 border border-dashed border-slate-300/60 dark:border-slate-600/50 bg-slate-50 dark:bg-transparent rounded-full pointer-events-auto"
     href={html_url}
     target="_blank"
     style={style}
@@ -96,13 +96,13 @@ const MemberCircle = ({
 );
 
 const Hero = ({ members }: { members: Member[] }) => (
-  <div className="min-h-[80vh] overflow-hidden relative">
+  <div className="min-h-[80vh] overflow-hidden relative dark:bg-slate-900">
     <BlurEffects />
     <GridVignette />
 
     <div className="container mx-auto grid px-4 md:grid-cols-[2fr,1fr] gap-32 relative z-10">
       <div className="my-32 mb-80 md:my-44 ml-4 relative z-10">
-        <h1 className="text-5xl md:text-6xl text-slate-900 font-extrabold leading-snug">
+        <h1 className="text-5xl md:text-6xl text-slate-900 dark:text-slate-100 font-extrabold leading-snug">
           Build. Contribute.
           <br />
           Open Source.
@@ -145,7 +145,7 @@ const Hero = ({ members }: { members: Member[] }) => (
           ))}
         </div>
 
-        <div className="absolute w-48 h-48 rounded-full overflow-hidden border border-dashed border-slate-300/60 animate-spin [animation-duration:100s]" />
+        <div className="absolute w-48 h-48 rounded-full overflow-hidden border border-dashed border-slate-300/60 dark:border-slate-600/50 animate-spin [animation-duration:100s]" />
 
         <div className="absolute w-32 h-32 rounded-full overflow-hidden bg-slate-50 shadow-sm">
           <img src="/rzp-engg.jpeg" className="brightness-150" />

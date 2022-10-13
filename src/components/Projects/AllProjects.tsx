@@ -43,15 +43,18 @@ const AllProjects = ({ projects }: { projects: Project[] }) => {
   );
 
   return (
-    <div className="bg-slate-100 shadow-inner-xs" id="projects">
+    <div
+      className="bg-slate-100 dark:bg-slate-900 shadow-inner-xs"
+      id="projects"
+    >
       <div className="relative">
         {/* Vertical guides, 2 on the edges */}
         <div className="absolute inset-0 container mx-auto flex justify-between">
-          <div className="guide-y" />
-          <div className="guide-y" />
+          <div className="guide-y dark:guide-y-dark" />
+          <div className="guide-y dark:guide-y-dark" />
         </div>
         <div className="flex flex-col justify-center container mx-auto pt-24 pb-10 px-4 relative z-10">
-          <h1 className="text-5xl font-extrabold text-center">
+          <h1 className="text-5xl font-extrabold text-center dark:text-white">
             Our <span className="text-blue-600">open source</span> projects
           </h1>
 
@@ -75,20 +78,22 @@ const AllProjects = ({ projects }: { projects: Project[] }) => {
         <div className="absolute inset-0 space-y-42">
           {isMounted &&
             [...new Array(Math.ceil(filteredProjects.length / numColumns))].map(
-              (_, idx) => <div className="guide-x" key={idx} />
+              (_, idx) => (
+                <div className="guide-x dark:guide-x-dark" key={idx} />
+              )
             )}
-          <div className="guide-x" />
+          <div className="guide-x dark:guide-x-dark" />
         </div>
 
         {/* Vertical guides (4 on desktop) */}
         <div className="absolute inset-0 container mx-auto grid md:grid-cols-2 lg:grid-cols-3">
-          <div className="guide-y hidden md:block" />
-          <div className="guide-y hidden lg:block" />
+          <div className="guide-y dark:guide-y-dark hidden md:block" />
+          <div className="guide-y dark:guide-y-dark hidden lg:block" />
 
           {/* Last column has two guides spaced between */}
           <div className="flex justify-between">
-            <div className="guide-y" />
-            <div className="guide-y" />
+            <div className="guide-y dark:guide-y-dark" />
+            <div className="guide-y dark:guide-y-dark" />
           </div>
         </div>
 

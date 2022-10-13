@@ -37,10 +37,10 @@ const ProjectCard = ({
 }: Project) => (
   <a
     href={html_url}
-    className="m-4 h-36 flex flex-col min-w-0 bg-white rounded px-6 py-4 shadow shadow-black/5 group transition transform hover:-translate-y-0.5 hover:scale-1015 hover:shadow-black/10"
+    className="m-4 h-36 flex flex-col min-w-0 bg-white dark:bg-slate-800 rounded px-6 py-4 shadow shadow-black/5 group transition transform hover:-translate-y-0.5 hover:scale-1015 hover:shadow-black/10"
   >
     <div className="flex justify-between items-center">
-      <div className="text-xl font-bold whitespace-nowrap text-ellipsis overflow-hidden min-w-0 transition-colors group-hover:text-blue-600">
+      <div className="text-xl font-bold whitespace-nowrap text-ellipsis overflow-hidden min-w-0 transition-colors group-hover:text-blue-600 dark:text-white">
         {name}
       </div>
       <div className="ml-2 flex items-center space-x-3 flex-shrink-0 font-semibold text-sm text-slate-500">
@@ -54,7 +54,7 @@ const ProjectCard = ({
         </span>
       </div>
     </div>
-    <div className="text-slate-600 text-sm tracking-wide mt-3 line-clamp-2">
+    <div className="text-slate-600 text-sm tracking-wide mt-3 line-clamp-2 dark:text-gray-300">
       {description}
     </div>
     <div className="mt-auto mb-0 flex font-mono justify-between">
@@ -66,9 +66,9 @@ const ProjectCard = ({
             } border border-black/10`}
           />
         )}
-        <span className="ml-2 text-xs">{language}</span>
+        <span className="ml-2 text-xs dark:text-gray-300">{language}</span>
       </div>
-      <div className="text-xs flex items-center transition-colors hover:text-blue-600">
+      <div className="text-xs flex items-center transition-colors hover:text-blue-600 dark:text-gray-300">
         Repository
         <HiOutlineExternalLink
           strokeWidth={2}

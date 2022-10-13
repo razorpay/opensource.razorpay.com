@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FaGithub } from 'react-icons/fa/index';
 import { HiMenu, HiX } from 'react-icons/hi/index';
 import { PropsOfHtmlElement } from '../utils/types';
+import ThemeSwitcher from './ThemeSwitcher';
 
 const Navigation = ({ className, ...props }: PropsOfHtmlElement) => (
   <nav className={`font-semibold text-sm ${className}`} {...props}>
@@ -15,6 +16,7 @@ const Navigation = ({ className, ...props }: PropsOfHtmlElement) => (
       <FaGithub size="0.875rem" className="mr-1.5" />
       GitHub
     </a>
+    <ThemeSwitcher />
   </nav>
 );
 
