@@ -3,15 +3,12 @@ import React, { useEffect, useState } from 'react';
 import { HiOutlineMoon, HiOutlineSun } from 'react-icons/hi/index';
 
 const ThemeSwitcher = () => {
-  const getInitialState = () => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('theme') as 'light' | 'dark' | undefined;
-    }
-    return 'light';
-  };
-  const [theme, setTheme] = useState<'light' | 'dark' | undefined>(
-    getInitialState
-  );
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+
+  useEffect(() => {
+    const localTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
+    setTheme(localTheme ?? 'light');
+  }, []);
 
   const handleThemeSwitch = () => {
     localStorage.setItem('theme', theme === 'dark' ? 'light' : 'dark');
@@ -20,8 +17,11 @@ const ThemeSwitcher = () => {
   };
 
   return (
-    <button onClick={handleThemeSwitch} className="flex justify-center">
-      <span className="hidden">{theme}</span>
+    <button
+      onClick={handleThemeSwitch}
+      className="flex justify-center"
+      aria-label={`Enable ${theme === 'dark' ? 'light' : 'dark'} theme`}
+    >
       {theme === 'dark' ? (
         <HiOutlineSun size="1rem" />
       ) : (
