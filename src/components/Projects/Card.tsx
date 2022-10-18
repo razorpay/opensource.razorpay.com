@@ -14,7 +14,7 @@ export interface Project {
 const languages: Record<string, string> = {
   JavaScript: 'bg-yellow-300',
   Go: 'bg-cyan-300',
-  PHP: 'bg-violet-900',
+  PHP: 'bg-indigo-800',
   CSS: 'bg-purple-800',
   Python: 'bg-sky-800',
   Ruby: 'bg-red-800',
@@ -24,7 +24,8 @@ const languages: Record<string, string> = {
   Shell: 'bg-lime-500',
   'C#': 'bg-emerald-600',
   'ASP.NET': 'bg-fuchsia-600',
-  TypeScript: 'bg-blue-800',
+  TypeScript: 'bg-blue-700',
+  Kotlin: 'bg-violet-500',
 };
 
 const ProjectCard = ({
@@ -63,7 +64,7 @@ const ProjectCard = ({
           <span
             className={`h-3 w-3 rounded-full ${
               languages[language!]
-            } border border-black/10`}
+            } border border-black/10 dark:border-white/10`}
           />
         )}
         <span className="ml-2 text-xs dark:text-gray-300">{language}</span>
