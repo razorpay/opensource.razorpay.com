@@ -2,6 +2,7 @@ import React from 'react';
 import Button from './Button';
 
 export interface Member {
+  login: string;
   html_url: string;
   id: string;
   avatar_url: string;
@@ -77,6 +78,7 @@ const BlurEffects = () => (
 );
 
 const MemberCircle = ({
+  login,
   html_url,
   avatar_url,
   style = {},
@@ -87,10 +89,12 @@ const MemberCircle = ({
     href={html_url}
     target="_blank"
     style={style}
+    aria-label={`Open ${login}'s GitHub profile`}
   >
     <img
       src={avatar_url}
       className={`rounded-full animate-counter-spin [animation-duration:100s] group-hover:pause ${imgClassName}`}
+      alt={login}
     />
   </a>
 );
@@ -102,7 +106,7 @@ const Hero = ({ members }: { members: Member[] }) => (
 
     <div className="container mx-auto grid px-4 md:grid-cols-[2fr,1fr] gap-32 relative z-10">
       <div className="my-32 mb-80 md:my-44 ml-4 relative z-10">
-        <h1 className="text-5xl md:text-6xl text-slate-900 dark:text-slate-100 font-extrabold leading-snug">
+        <h1 className="text-5xl md:text-6xl text-slate-900 dark:text-slate-100 font-extrabold leading-snug md:leading-tight">
           Build. Contribute.
           <br />
           Open Source.
@@ -148,7 +152,11 @@ const Hero = ({ members }: { members: Member[] }) => (
         <div className="absolute w-48 h-48 rounded-full overflow-hidden border border-dashed border-slate-300/60 dark:border-slate-600/50 animate-spin [animation-duration:100s]" />
 
         <div className="absolute w-32 h-32 rounded-full overflow-hidden bg-slate-50 shadow-sm">
-          <img src="/rzp-engg.jpeg" className="brightness-150" />
+          <img
+            src="/rzp-engg.jpeg"
+            className="brightness-150"
+            alt="Razorpay Engineering"
+          />
         </div>
       </div>
     </div>

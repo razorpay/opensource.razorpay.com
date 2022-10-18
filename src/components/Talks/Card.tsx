@@ -12,6 +12,25 @@ export interface Talk {
   url: string;
 }
 
+const Speaker = ({
+  url,
+  avatar,
+  name,
+  className = '',
+}: Talk['speakers'][0] & { className?: string }) => (
+  <a
+    href={url}
+    className={`rounded-full overflow-hidden border-4 border-slate-800 transition-colors hover:border-sky-500 ${className}`}
+    aria-label={`View more about ${name}`}
+  >
+    <img
+      src={avatar}
+      className="mix-blend-luminosity w-9 h-9 hover:mix-blend-normal"
+      alt={name}
+    />
+  </a>
+);
+
 const TalkCard = ({ published, slides, speakers, title, url }: Talk) => (
   <div className="flex flex-col px-8 py-6 bg-slate-800 rounded overflow-hidden transform transition shadow-lg">
     <a href={url}>
@@ -21,32 +40,17 @@ const TalkCard = ({ published, slides, speakers, title, url }: Talk) => (
     </a>
     <div className="mt-3 mb-10 flex items-center group">
       <div className="mr-2 flex items-center empty:mr-0">
-        {speakers && speakers[0].avatar && (
-          <a
-            href={speakers[0].url}
-            className="rounded-full overflow-hidden border-4 border-slate-800 transition-colors hover:border-sky-500"
-          >
-            <img
-              src={speakers[0].avatar}
-              className="mix-blend-luminosity w-9 h-9 hover:mix-blend-normal"
-            />
-          </a>
-        )}
+        {speakers && speakers[0].avatar && <Speaker {...speakers[0]} />}
 
         {speakers
           .slice(1)
           .filter(({ avatar }) => avatar)
-          .map(({ avatar, url, name }) => (
-            <a
-              key={name}
-              href={url}
-              className="relative rounded-full overflow-hidden -ml-4 transition-all border-4 border-slate-800 group-hover:ml-1 hover:border-sky-500"
-            >
-              <img
-                src={avatar}
-                className="mix-blend-luminosity w-9 h-9 hover:mix-blend-normal"
-              />
-            </a>
+          .map((speaker) => (
+            <Speaker
+              key={speaker.name}
+              {...speaker}
+              className="relative -ml-4 transition-all group-hover:ml-1"
+            />
           ))}
       </div>
       <span className="font-medium text-slate-400 text-sm">
