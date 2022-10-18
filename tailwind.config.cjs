@@ -5,6 +5,11 @@ module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
+    container: {
+      padding: {
+        '2xl': '8rem !important',
+      },
+    },
     extend: {
       fontFamily: {
         sans: ['Mulish', ...defaultTheme.fontFamily.sans],
