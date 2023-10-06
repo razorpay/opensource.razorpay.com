@@ -6,8 +6,8 @@ import ThemeSwitcher from './ThemeSwitcher';
 
 const Navigation = ({ className, ...props }: PropsOfHtmlElement) => (
   <nav className={`font-semibold text-sm ${className}`} {...props}>
-    <a href="#projects">Projects</a>
-    <a href="#talks">Talks</a>
+    <a href="/#projects">Projects</a>
+    <a href="/#talks">Talks</a>
     <a href="https://razorpay.com/jobs">Careers</a>
     <a
       href="https://github.com/razorpay"

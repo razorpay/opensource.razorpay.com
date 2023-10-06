@@ -55,7 +55,7 @@ const AllProjects = ({ projects }: { projects: Project[] }) => {
         </div>
         <div className="flex flex-col justify-center container mx-auto pt-24 pb-10 px-4 relative z-10">
           <h1 className="text-5xl font-extrabold text-center dark:text-white">
-            Our <span className="text-blue-600">open source</span> projects
+            Our <span className="text-blue-600">open-source</span> projects
           </h1>
 
           <div className="flex flex-wrap px-4 mt-24 gap-4 md:justify-center">
