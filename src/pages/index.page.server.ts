@@ -20,6 +20,8 @@ export async function onBeforeRender() {
       import('../talks.yaml'),
     ]);
 
+  projects.sort((a, b) => b.stargazers_count - a.stargazers_count);
+
   return {
     pageContext: {
       pageProps: {
