@@ -1,6 +1,7 @@
 import Button from '../components/Button';
 import Callout from '../components/Callout';
 import Footer from '../components/Footer';
+import HacktoberfestCallout from '../components/HacktoberfestCallout';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import AllProjects from '../components/Projects/AllProjects';
@@ -14,6 +15,7 @@ export const Page = ({ projects, talks, members }: PageData) => {
 
       <Hero members={members} />
 
+      <HacktoberfestCallout />
       {/* <FeaturedProjects projects={projects} /> */}
 
       <AllProjects projects={projects} />
