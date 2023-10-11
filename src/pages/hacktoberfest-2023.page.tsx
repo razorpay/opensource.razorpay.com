@@ -127,4 +127,6 @@ export const Page = ({ projects }: PageData) => {
 
 export const documentProps = {
   title: 'Hacktoberfest 2023 | Razorpay Open Source',
+  sitePreview:
+    'https://opensource.razorpay.com/razorpay-hacktoberfest-site-preview.png',
 };

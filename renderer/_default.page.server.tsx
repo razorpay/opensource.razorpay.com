@@ -23,6 +23,10 @@ async function render(pageContext: PageContextBuiltIn & PageContext) {
   const desc =
     (documentProps && documentProps.description) || 'Razorpay Open Source';
 
+  const sitePreview =
+    (documentProps && documentProps.sitePreview) ||
+    'https://opensource.razorpay.com/site-preview.jpg';
+
   const documentHtml = escapeInject`<!DOCTYPE html>
     <html lang="en">
       <head>
@@ -38,14 +42,14 @@ async function render(pageContext: PageContextBuiltIn & PageContext) {
         <meta property="og:url" content="https://opensource.razorpay.com/">
         <meta property="og:title" content="${title}">
         <meta property="og:description" content="${desc}">
-        <meta property="og:image" content="https://opensource.razorpay.com/site-preview.jpg">
+        <meta property="og:image" content="${sitePreview}">
         
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:url" content="https://opensource.razorpay.com/">
         <meta property="twitter:title" content="${title}">
         <meta property="twitter:description" content="${desc}">
-        <meta property="twitter:image" content="https://opensource.razorpay.com/site-preview.jpg">
+        <meta property="twitter:image" content="${sitePreview}">
 
         <link rel="icon" type="image/png" href="https://opensource.razorpay.com/favicon.png">
 
