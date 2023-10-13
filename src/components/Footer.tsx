@@ -1,9 +1,9 @@
 import {
   FaGithub,
-  FaTwitter,
+  FaXTwitter,
   FaLinkedinIn,
   FaInstagram,
-} from 'react-icons/fa/index';
+} from 'react-icons/fa6';
 
 const Footer = () => (
   <footer className={`text-sm shadow-inner-xs dark:bg-slate-900 bg-slate-100`}>
@@ -37,7 +37,7 @@ const Footer = () => (
           href="https://twitter.com/Razorpay"
           aria-label="Open Razorpay Twitter"
         >
-          <FaTwitter size="1rem" />
+          <FaXTwitter size="1rem" />
         </a>
         <a
           href="https://linkedin.com/company/razorpay"
