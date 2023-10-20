@@ -20,10 +20,21 @@ const Footer = () => (
       <nav
         className={`mt-8 md:mt-0 md:ml-auto lg:mr-6 font-semibold flex flex-col md:flex-row items-center gap-6 dark:text-slate-300 text-slate-700'`}
       >
-        <a href="https://github.com/razorpay/public-presentations">Talks</a>
-        <a href="https://engineering.razorpay.com/">Engineering Blog</a>
-        <a href="https://razorpay.com/jobs/">Careers</a>
-        <a href="https://razorpay.com/docs/">Documentation</a>
+        <a
+          href="https://github.com/razorpay/public-presentations"
+          target="_blank"
+        >
+          Talks
+        </a>
+        <a href="https://engineering.razorpay.com/" target="_blank">
+          Engineering Blog
+        </a>
+        <a href="https://razorpay.com/jobs/" target="_blank">
+          Careers
+        </a>
+        <a href="https://razorpay.com/docs/" target="_blank">
+          Documentation
+        </a>
       </nav>
 
       {/* Social links */}

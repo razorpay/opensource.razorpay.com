@@ -29,12 +29,13 @@ export const Page = ({ projects, talks, members }: PageData) => {
         </h1>
 
         <div className="flex flex-col sm:flex-row mt-12 space-y-4 sm:space-x-4 sm:space-y-0 justify-center mx-auto max-w-xs ">
-          <Button as="a" href="https://razorpay.com/jobs/">
+          <Button as="a" href="https://razorpay.com/jobs/" target="_blank">
             Join Razorpay
           </Button>
           <Button
             as="a"
             href="https://stackshare.io/razorpay/open-source-showcase"
+            target="_blank"
           >
             View Stack
           </Button>
