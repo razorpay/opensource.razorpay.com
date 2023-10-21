@@ -14,6 +14,7 @@ const HacktoberfestCallout = () => {
 
           <a
             href="/hacktoberfest-2023"
+            target="_blank"
             className="mt-10 inline-block bg-white px-6 py-2 text-[#110B13] font-semibold rounded-sm transition-colors hover:bg-[#C5BCC4]"
           >
             Read more

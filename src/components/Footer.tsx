@@ -41,24 +41,31 @@ const Footer = () => (
       <nav
         className={`flex justify-center md:justify-start space-x-6 dark:text-slate-300 text-slate-700`}
       >
-        <a href="https://github.com/Razorpay" aria-label="Open Razorpay GitHub">
+        <a
+          href="https://github.com/Razorpay"
+          aria-label="Open Razorpay GitHub"
+          target="_blank"
+        >
           <FaGithub size="1rem" />
         </a>
         <a
           href="https://twitter.com/Razorpay"
           aria-label="Open Razorpay Twitter"
+          target="_blank"
         >
           <FaXTwitter size="1rem" />
         </a>
         <a
           href="https://linkedin.com/company/razorpay"
           aria-label="Open Razorpay LinkedIn"
+          target="_blank"
         >
           <FaLinkedinIn size="1rem" />
         </a>
         <a
           href="https://www.instagram.com/razorpay/"
           aria-label="Open Razorpay Instagram"
+          target="_blank"
         >
           <FaInstagram size="1rem" />
         </a>
