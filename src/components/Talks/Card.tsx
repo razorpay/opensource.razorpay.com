@@ -20,6 +20,7 @@ const Speaker = ({
 }: Talk['speakers'][0] & { className?: string }) => (
   <a
     href={url}
+    target="_blank"
     className={`rounded-full overflow-hidden border-4 border-slate-800 transition-colors hover:border-sky-500 ${className}`}
     aria-label={`View more about ${name}`}
   >
@@ -33,7 +34,7 @@ const Speaker = ({
 
 const TalkCard = ({ published, slides, speakers, title, url }: Talk) => (
   <div className="flex flex-col px-8 py-6 bg-slate-800 rounded overflow-hidden transform transition shadow-lg">
-    <a href={url}>
+    <a href={url} target="_blank">
       <h2 className="text-xl font-semibold text-white tracking-wide leading-relaxed transition-colors hover:text-sky-500">
         {title}
       </h2>
@@ -62,6 +63,7 @@ const TalkCard = ({ published, slides, speakers, title, url }: Talk) => (
       {slides && (
         <a
           href={slides}
+          target="_blank"
           className="flex items-center transition-colors hover:text-sky-500"
         >
           Slides

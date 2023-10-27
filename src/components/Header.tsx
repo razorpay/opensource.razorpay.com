@@ -8,9 +8,12 @@ const Navigation = ({ className, ...props }: PropsOfHtmlElement) => (
   <nav className={`font-semibold text-sm ${className}`} {...props}>
     <a href="/#projects">Projects</a>
     <a href="/#talks">Talks</a>
-    <a href="https://razorpay.com/jobs">Careers</a>
+    <a href="https://razorpay.com/jobs" target="_blank">
+      Careers
+    </a>
     <a
       href="https://github.com/razorpay"
+      target="_blank"
       className="flex items-center justify-center"
     >
       <FaGithub size="0.875rem" className="mr-1.5" />
