@@ -462,7 +462,7 @@
     {
       "html_url": "https://github.com/razorpay/kubestash-v2",
       "name": "kubestash-v2",
-      "categories": ["kubernetes", "credstash"],
+      "categories": ["Kubernetes", "Credstash"],
       "stargazers_count": 0,
       "forks": 0,
       "description": "Sync secrets from Credstash table to Kubernetes secret",
