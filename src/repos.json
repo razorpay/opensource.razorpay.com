@@ -48,7 +48,7 @@
     {
       "html_url": "https://github.com/razorpay/razorpay-node",
       "name": "razorpay-node",
-      "categories": ["SDKs", "Hacktoberfest"],
+      "categories": ["SDKs"],
       "stargazers_count": 146,
       "forks": 96,
       "description": "Razorpay node.js bindings",
@@ -57,7 +57,7 @@
     {
       "html_url": "https://github.com/razorpay/devstack",
       "name": "devstack",
-      "categories": ["Featured", "Hacktoberfest"],
+      "categories": ["Featured"],
       "stargazers_count": 107,
       "forks": 8,
       "description": "Razorpay DevX cloud on laptop solution",
