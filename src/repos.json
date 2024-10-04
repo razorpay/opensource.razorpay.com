@@ -467,6 +467,15 @@
       "forks": 0,
       "description": "Sync secrets from Credstash table to Kubernetes secret",
       "language": "Python"
+    },
+    {
+      "html_url": "https://github.com/razorpay/i18nify",
+      "name": "i18nify",
+      "categories": ["SDKs"],
+      "stargazers_count": 15,
+      "forks": 3,
+      "description": "🌐 One stop javascript solution for all your internationalisation needs.",
+      "language": "JavaScript"
     }
   ]
 }
