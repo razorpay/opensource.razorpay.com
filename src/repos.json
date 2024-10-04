@@ -471,7 +471,7 @@
     {
       "html_url": "https://github.com/razorpay/i18nify",
       "name": "i18nify",
-      "categories": ["SDKs"],
+      "categories": ["Hacktoberfest"],
       "stargazers_count": 15,
       "forks": 3,
       "description": "🌐 One stop javascript solution for all your internationalisation needs.",
