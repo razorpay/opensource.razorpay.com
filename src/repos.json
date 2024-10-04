@@ -129,7 +129,7 @@
     {
       "html_url": "https://github.com/razorpay/metro",
       "name": "metro",
-      "categories": ["Featured", "Hacktoberfest"],
+      "categories": ["Featured"],
       "stargazers_count": 47,
       "forks": 14,
       "description": "The Service Bus!",
