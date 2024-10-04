@@ -474,8 +474,8 @@
       "categories": ["Hacktoberfest"],
       "stargazers_count": 15,
       "forks": 3,
-      "description": "🌐 One stop javascript solution for all your internationalisation needs.",
-      "language": "JavaScript"
+      "description": "🌐 i18nify is a comprehensive internationalization (i18n) library for all things global. Currently, it provides functionalities for handling countries, currencies, phone numbers, and subdivisions, making it easier to localize applications for different regions and languages.",
+      "language": "JavaScript, Go"
     }
   ]
 }
