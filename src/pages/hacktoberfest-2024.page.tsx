@@ -108,7 +108,7 @@ export const Page = ({ projects }: PageData) => {
             </li>
             <li className="pl-2">
               After your pull request(s) is accepted,{' '}
-              <Link href="https://forms.gle/jfDMUK8i2wxCr4Ky7">
+              <Link href="https://forms.gle/fFNqHE4q88E2orrK7">
                 fill this form
               </Link>
               . We'll later reach out to you with details for the goodies once
