@@ -1,7 +1,7 @@
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import ProjectCard from '../components/Projects/Card';
-import { PageData } from './hacktoberfest-2023.page.server';
+import { PageData } from './hacktoberfest-2024.page.server';
 
 const Link = (
   props: React.DetailedHTMLProps<
@@ -33,22 +33,24 @@ export const Page = ({ projects }: PageData) => {
             className="bg-white rounded-lg"
           />
           <h1 className="mt-10 md:mt-24 text-4xl md:text-5xl font-extrabold leading-normal">
-            Razorpay Hacktoberfest 2023
+            Razorpay Hacktoberfest 2024
           </h1>
           <p className="mt-16 text-lg leading-8 text-slate-700 dark:text-slate-400">
-            <Link href="https://hacktoberfest.com">Hacktoberfest</Link> turned
-            10 this year 🎉!
+            <Link href="https://hacktoberfest.com">Hacktoberfest</Link> season
+            is backk!!
             <br />
-            We at Razorpay are celebrating this milestone by encouraging
-            developers to make contributions to our open-source repositories.
-            Whether you are a first-time contributor, or an experienced
-            open-source developer, we welcome you to join us in this
-            celebration. Everyone who makes one or more contributions to the{' '}
+            <br />
+            We at Razorpay are excited to participate in Hacktoberfest 2024!
+            Whether you're a first-time contributor or an experienced
+            open-source developer, we welcome you to join us in contributing to
+            our open-source repositories. Everyone who makes one or more
+            contributions to the{' '}
             <Link href="https://github.com/orgs/razorpay/repositories">
               Razorpay repositories
             </Link>{' '}
-            during Hacktoberfest (October 1st 2023 to October 31st 2023) will
-            receive special goodies.
+            during Hacktoberfest (October 1st, 2024 to October 31st, 2024) will
+            receive special goodies. Let's come together and make an impact in
+            the open-source community!
           </p>
 
           <h2 className="mt-16 text-3xl font-bold">Requirements</h2>
@@ -106,7 +108,7 @@ export const Page = ({ projects }: PageData) => {
             </li>
             <li className="pl-2">
               After your pull request(s) is accepted,{' '}
-              <Link href="https://forms.gle/jfDMUK8i2wxCr4Ky7">
+              <Link href="https://forms.gle/fFNqHE4q88E2orrK7">
                 fill this form
               </Link>
               . We'll later reach out to you with details for the goodies once
@@ -126,7 +128,7 @@ export const Page = ({ projects }: PageData) => {
 };
 
 export const documentProps = {
-  title: 'Hacktoberfest 2023 | Razorpay Open Source',
+  title: 'Hacktoberfest 2024 | Razorpay Open Source',
   sitePreview:
     'https://opensource.razorpay.com/razorpay-hacktoberfest-site-preview.png',
 };

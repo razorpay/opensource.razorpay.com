@@ -12,8 +12,8 @@
     {
       "html_url": "https://github.com/razorpay/ifsc",
       "name": "ifsc",
-      "categories": ["Finance"],
-      "stargazers_count": 306,
+      "categories": ["Finance", "Hacktoberfest"],
+      "stargazers_count": 338,
       "forks": 131,
       "description": "🏦 IFSC Codes Repository",
       "language": "Go"
@@ -22,7 +22,7 @@
       "html_url": "https://github.com/razorpay/blade",
       "name": "blade",
       "categories": ["Hacktoberfest", "Design", "Featured"],
-      "stargazers_count": 341,
+      "stargazers_count": 503,
       "forks": 93,
       "description": "Design System that powers Razorpay",
       "language": "TypeScript"
@@ -30,7 +30,7 @@
     {
       "html_url": "https://github.com/razorpay/razorpay-php",
       "name": "razorpay-php",
-      "categories": ["SDKs", "Hacktoberfest"],
+      "categories": ["SDKs"],
       "stargazers_count": 169,
       "forks": 139,
       "description": "Razorpay PHP Library ",
@@ -39,7 +39,7 @@
     {
       "html_url": "https://github.com/razorpay/razorpay-python",
       "name": "razorpay-python",
-      "categories": ["SDKs", "Hacktoberfest"],
+      "categories": ["SDKs"],
       "stargazers_count": 137,
       "forks": 108,
       "description": "Razorpay Python SDK",
@@ -48,7 +48,7 @@
     {
       "html_url": "https://github.com/razorpay/razorpay-node",
       "name": "razorpay-node",
-      "categories": ["SDKs", "Hacktoberfest"],
+      "categories": ["SDKs"],
       "stargazers_count": 146,
       "forks": 96,
       "description": "Razorpay node.js bindings",
@@ -57,7 +57,7 @@
     {
       "html_url": "https://github.com/razorpay/devstack",
       "name": "devstack",
-      "categories": ["Featured", "Hacktoberfest"],
+      "categories": ["Featured"],
       "stargazers_count": 107,
       "forks": 8,
       "description": "Razorpay DevX cloud on laptop solution",
@@ -93,7 +93,7 @@
     {
       "html_url": "https://github.com/razorpay/ifsc-api",
       "name": "ifsc-api",
-      "categories": ["Finance"],
+      "categories": ["Finance", "Hacktoberfest"],
       "stargazers_count": 73,
       "forks": 39,
       "description": "🏦 Standalone API for IFSC codes",
@@ -111,7 +111,7 @@
     {
       "html_url": "https://github.com/razorpay/razorpay-ruby",
       "name": "razorpay-ruby",
-      "categories": ["SDKs", "Hacktoberfest"],
+      "categories": ["SDKs"],
       "stargazers_count": 62,
       "forks": 62,
       "description": "Razorpay Ruby SDK",
@@ -147,7 +147,7 @@
     {
       "html_url": "https://github.com/razorpay/razorpay-java",
       "name": "razorpay-java",
-      "categories": ["SDKs", "Hacktoberfest"],
+      "categories": ["SDKs"],
       "stargazers_count": 39,
       "forks": 61,
       "description": "Razorpay Java SDK",
@@ -174,7 +174,7 @@
     {
       "html_url": "https://github.com/razorpay/razorpay-magento",
       "name": "razorpay-magento",
-      "categories": ["Integrations"],
+      "categories": ["Integrations", "Hacktoberfest"],
       "stargazers_count": 27,
       "forks": 37,
       "description": "Razorpay Payment Extension for Magento",
@@ -192,7 +192,7 @@
     {
       "html_url": "https://github.com/razorpay/razorpay-go",
       "name": "razorpay-go",
-      "categories": ["SDKs", "Hacktoberfest"],
+      "categories": ["SDKs"],
       "stargazers_count": 28,
       "forks": 22,
       "description": "Razorpay Go SDK",
@@ -318,7 +318,7 @@
     {
       "html_url": "https://github.com/razorpay/razorpay-dot-net",
       "name": "razorpay-dot-net",
-      "categories": ["SDKs", "Hacktoberfest"],
+      "categories": ["SDKs"],
       "stargazers_count": 10,
       "forks": 36,
       "description": "Razorpay .NET SDK",
@@ -453,7 +453,7 @@
     {
       "html_url": "https://github.com/razorpay/razorpay-gravity-forms",
       "name": "razorpay-gravity-forms",
-      "categories": ["Integrations"],
+      "categories": ["Integrations", "Hacktoberfest"],
       "stargazers_count": 0,
       "forks": 4,
       "description": "Razorpay Gravity Forms plugin",
@@ -467,6 +467,15 @@
       "forks": 0,
       "description": "Sync secrets from Credstash table to Kubernetes secret",
       "language": "Python"
+    },
+    {
+      "html_url": "https://github.com/razorpay/i18nify",
+      "name": "i18nify",
+      "categories": ["Hacktoberfest"],
+      "stargazers_count": 15,
+      "forks": 3,
+      "description": "🌐 i18nify is a comprehensive internationalization (i18n) library for all things global. Currently, it provides functionalities for handling countries, currencies, phone numbers, and subdivisions, making it easier to localize applications for different regions and languages.",
+      "language": "JavaScript, Go"
     }
   ]
 }
