@@ -13,7 +13,7 @@ const Footer = () => (
     >
       {/* Copyrights */}
       <div className="mt-8 md:mt-0 font-medium text-slate-500 text-center md:text-left whitespace-nowrap">
-        <span>© Razorpay 2024. All Rights Reserved.</span>
+        <span>© Razorpay {new Date().getFullYear()}. All Rights Reserved.</span>
       </div>
 
       {/* Website nav links */}
