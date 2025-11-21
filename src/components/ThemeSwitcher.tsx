@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-
 import { HiOutlineMoon, HiOutlineSun } from 'react-icons/hi/index';
 
 const ThemeSwitcher = () => {
@@ -7,13 +6,16 @@ const ThemeSwitcher = () => {
 
   useEffect(() => {
     const localTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
-    setTheme(localTheme ?? 'light');
+    const initialTheme = localTheme ?? 'light';
+    setTheme(initialTheme);
+    document.documentElement.classList.toggle('dark', initialTheme === 'dark');
   }, []);
 
   const handleThemeSwitch = () => {
-    localStorage.setItem('theme', theme === 'dark' ? 'light' : 'dark');
-    setTheme(theme === 'dark' ? 'light' : 'dark');
-    document.documentElement.classList.toggle('dark');
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', newTheme);
+    setTheme(newTheme);
+    document.documentElement.classList.toggle('dark', newTheme === 'dark');
   };
 
   return (
