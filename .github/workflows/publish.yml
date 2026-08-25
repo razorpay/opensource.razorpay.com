@@ -28,19 +28,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
       - name: Setup PMG proxy
+        id: pmg-setup
         uses: safedep/pmg@v1
         with:
           server-mode: true
           api-key: ${{ secrets.PMG_PUBLIC_REPOS_TOKEN }}
           tenant-id: ${{ secrets.PMG_TENANT_ID }}
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
       - name: Build
         run: yarn && yarn build
-      - name: Enforce PMG policy
-        if: always()
-        run: pmg proxy stop --fail-on-violation
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
@@ -48,3 +46,11 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+      - name: Enforce PMG policy
+        if: always()
+        run: |
+          if [ "${{ steps.pmg-setup.outcome }}" = "success" ]; then
+            pmg proxy stop --fail-on-violation
+          else
+            pmg proxy stop || true
+          fi
